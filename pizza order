@@ -1,0 +1,18 @@
+size=input("enter the size of pizza")
+add_peporonni=input("enter y or n if you want to add_peporonni")
+extra_cheese=input("enter y or n if you want extra_cheese")
+bill=0
+if size =="s":
+  bill +=15
+elif size=="m":
+  bill+=20
+elif size=="l":
+  bill+=25
+if add_peporonni=="y":
+  if size=="s":
+    bill+=2
+  else:
+    bill+=3
+if extra_cheese=="y":
+  bill+=1
+print(f"your total bill is ${bill}")    
